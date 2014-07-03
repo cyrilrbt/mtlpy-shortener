@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p>Welcome to <a href="http://montrealpython.org/">Montr&eacute;al Python</a>'s url shortener.</p>
+<form method="post">
+  {% if form.errors %}
+  {{ form.errors }}
+  {% endif %}
+  <p>
+    <label for="id_link">Enter a link to generate a short url.</label>
+    {{ form.link }}
+  </p>
+  <p><input type="submit" value="mtlpy it!" /></p>
+</form>
+{% endblock %}

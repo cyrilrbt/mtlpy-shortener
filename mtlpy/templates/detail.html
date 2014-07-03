@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p><b>Congratulations!</b></p>
+<p>You've just shortened a link with mtlpy. Awesome, isn't it?</p>
+<p>Original link: <a href="{{ shortcut.link }}" target="_blank">{{ shortcut.link }}</a></p>
+<p>&nbsp;</p>
+<h2><a href="{{ shortcut.short_link }}" target="_blank">{{ shortcut.short_link }}</a></h2>
+{% endblock %}
